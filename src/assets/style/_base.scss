@@ -13,6 +13,7 @@
     --font-a700: 'AppleSDGothicNeo-B','sans-serif';
     --font-a800: 'AppleSDGothicNeo-EB','sans-serif';
 
+    --fontSize-12: 1.2rem;
     --fontSize-16: 1.6rem;
     --fontSize-20: 2rem;
     --fontSize-24: 2.4rem;
@@ -36,7 +37,7 @@
     --text-headLine: rgb(29, 29, 31);
     --text-caption: rgba(0, 0, 0, 0.88);
     --text-copy: rgb(91, 91, 97);
-    --text-description: rgb(1S34, 134, 139);
+    --text-description: rgb(134, 134, 139);
     --text-gray: rgb(110, 110, 115);
     --text-green: rgb(0, 190, 104);
     --text-link: rgb(0, 102, 204);
@@ -47,18 +48,29 @@
 
     // Max Width Option
     --width-1680: 168rem;
+    --width-1024: 102.4rem;
     --width-980: 98rem;
+
+    // Margin Option 
+    --gap-12: 1.2rem;
+    --gap-16: 1.6rem;
+    --gap-20: 2rem;
+    --gap-24: 2.4rem;
+    --gap-28: 2.8rem;
+    --gap-32: 3.2rem;
+    --gap-36: 3.6rem;
+    --gap-40: 4rem;
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1920px) {
     :root{
         font-size: 62.5%;
     }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1920px) {
     :root{
-      font-size: calc(10 / (1700 / 100) * 1vw) ;
+      font-size: calc(10 / (1920 / 100) * 1vw) ;
     }
 }
 
@@ -68,9 +80,9 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     :root{
-      font-size: calc(10 / (750 / 100) * 1vw) ;
+      font-size: calc(10 / (800 / 100) * 1vw) ;
     }
 }
 

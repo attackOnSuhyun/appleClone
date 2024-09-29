@@ -1,1 +1,24 @@
 @import url(./_base.scss);
+@import url(./_header.scss);
+
+body {
+    background-color: var(--text-gray);
+}
+
+.pc {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}

@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .4);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        z-index: 200;
+    }
+    &__inner {
+        width: 100%;
+        position: relative;
+        max-width: var(--width-1024);
+        margin: 0 auto;
+        padding-inline: var(--gap-20);
+        > ul {
+            width: 100%;
+            height: 4.4rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            > li {
+                width: fit-content;
+                a {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: fit-content;
+                    height: 4.4rem;
+                    padding-inline: 0.8rem;
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: var(--fontSize-12);
+                    will-change: color;
+                    transition: color .32s cubic-bezier(.4,0,.6,1);
+                    z-index: 300;
+                    &.active, &:hover {
+                        color: var(--color-white);
+                    }
+                    svg {
+                        filter: invert(1);
+                    }
+                }
+                .slide-nav {
+                    width: 100vw;
+                    height: fit-content;
+                    padding-top: 4.4rem;
+                    background-color: var(--color-darkbg);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 200;
+                    will-change: transform;
+                    transform: translateY(-100%);
+                    transition: transform 0.5s ease;
+                    .inner {
+                        width: 100%;
+                        position: relative;
+                        max-width: var(--width-1024);
+                        max-height: 70vh;
+                        overflow-y: auto;
+                        margin: 0 auto;
+                        padding: var(--gap-40) var(--gap-20) 8.4rem;
+                        display: flex;
+                        align-items: flex-start;
+                        opacity: 0;
+                        will-change: opacity;
+                        > div {
+                            width: fit-content;
+                            position: relative;
+                            &.big-menu {
+                                padding-right: 8.8rem;
+                            }
+                            &.small-menu {
+                                padding-right: 4.4rem;
+                                ul {
+                                    li {
+                                        a {
+                                            font-size: var(--fontSize-12);
+                                        }
+                                    }
+                                }
+                            }
+                            h2 {
+                                font-size: var(--fontSize-12);
+                                color: var(--text-description);
+                                margin-bottom: var(--gap-12);
+                            }
+                            ul {
+                                width: 100%;
+                                position: relative;
+                                li {
+                                    a {
+                                        height: fit-content;
+                                        padding-block: 0.8rem;
+                                        padding-inline: 0;
+                                        font-family: var(--font-a700);
+                                        font-size: var(--fontSize-24);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
