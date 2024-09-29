@@ -6,19 +6,19 @@ body {
 }
 
 .pc {
-    display: block;
+    display: block !important;
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (max-width: 800px) {
     .pc {
-        display: none;
+        display: none !important;
     }
 
     .mobile {
-        display: block;
+        display: block !important;
     }
 }
