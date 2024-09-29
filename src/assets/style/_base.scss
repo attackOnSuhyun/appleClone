@@ -1,0 +1,126 @@
+@import url(/assets/fonts/fonts.css);
+
+:root {
+    font-family: var(--font-a400);
+    line-height: var(--lineHeight-default);
+    
+    // Font Option
+    --font-a200: 'AppleSDGothicNeo-UL','sans-serif';
+    --font-a300: 'AppleSDGothicNeo-L','sans-serif';
+    --font-a400: 'AppleSDGothicNeo-R','sans-serif';
+    --font-a500: 'AppleSDGothicNeo-M','sans-serif';
+    --font-a600: 'AppleSDGothicNeo-SB','sans-serif';
+    --font-a700: 'AppleSDGothicNeo-B','sans-serif';
+    --font-a800: 'AppleSDGothicNeo-EB','sans-serif';
+
+    --fontSize-16: 1.6rem;
+    --fontSize-20: 2rem;
+    --fontSize-24: 2.4rem;
+    --fontSize-28: 2.8rem;
+    --fontSize-32: 3.2rem;
+    --fontSize-36: 3.6rem;
+    --fontSize-40: 4rem;
+    --fontSize-44: 4.4rem;
+    --fontSize-48: 4.8rem;
+    --fontSize-52: 5.2rem;
+    --fontSize-56: 5.6rem;
+    --fontSize-80: 8rem;
+
+    --lineHeight-default: 1.2;
+
+    // Color Option
+    --color-whitebg: rgb(245, 245, 247);
+    --color-darkbg: rgb(29, 29, 31);
+    --color-white: rgb(255, 255, 255);
+
+    --text-headLine: rgb(29, 29, 31);
+    --text-caption: rgba(0, 0, 0, 0.88);
+    --text-copy: rgb(91, 91, 97);
+    --text-description: rgb(1S34, 134, 139);
+    --text-gray: rgb(110, 110, 115);
+    --text-green: rgb(0, 190, 104);
+    --text-link: rgb(0, 102, 204);
+    --text-red: rgb(182, 68, 0);
+
+    --btn-color: rgb(0, 113, 227);
+    --gradient: linear-gradient(108deg, #0894ff, #c959dd 34%, #ff2e54 68%, #ff9004);
+
+    // Max Width Option
+    --width-1680: 168rem;
+    --width-980: 98rem;
+}
+
+@media screen and (min-width: 1700px) {
+    :root{
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    :root{
+      font-size: calc(10 / (1700 / 100) * 1vw) ;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    :root{
+      font-size: calc(10 / (1280 / 100) * 1vw) ;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    :root{
+      font-size: calc(10 / (750 / 100) * 1vw) ;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    :root{
+      font-size: calc(10 / (475 / 100) * 1vw) ;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    position: relative;
+    font-size: var(--fontSize-20);
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+a {
+    font-family: var(--font-a400);
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+button {
+    font-family: var(--font-a400);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a, button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+

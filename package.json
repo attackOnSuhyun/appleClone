@@ -1,0 +1,22 @@
+{
+  "name": "apple-clone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.79.4",
+    "vite": "^5.4.1",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-html-template": "^1.2.2",
+    "vite-plugin-minify": "^2.0.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "glob": "^11.0.0"
+  }
+}

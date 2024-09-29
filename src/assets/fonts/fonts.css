@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'AppleSDGothicNeo-EB';
+    font-weight: 800;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoEB.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-B';
+    font-weight: 700;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoB.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-SB';
+    font-weight: 600;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoSB.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-M';
+    font-weight: 500;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-R';
+    font-weight: 400;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoR.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-L';
+    font-weight: 300;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoL.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo-UL';
+    font-weight: 200;
+    font-display: swap;
+    src: url(./AppleSDGothicNeoUL.woff) format('woff');
+}
